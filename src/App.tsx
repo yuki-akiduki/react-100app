@@ -1,16 +1,15 @@
-import './App.css'
-import Card from './components/common/Card'
+import './App.css';
+import Home from './components/home/Home';
+import HelloWorld from './components/HelloWorld/HelloWorld';
+import { Routes, Route} from 'react-router-dom';
 function App() {
 
   return (
     <>
-      <main className='container mx-auto px-6'>
-        <h1 className='text-center text-4xl mt-10 leading-normal font-bold'>Create to React 100 app</h1>
-        <div className='mt-10 grid grid-cols-5 gap-6'>
-          <Card />
-        </div>
-
-      </main>
+      <Routes>
+        <Route path='/' element = {<Home/>} />
+        <Route path='/helloworld' element = {<HelloWorld/>} />
+      </Routes>
     </>
   )
 }
