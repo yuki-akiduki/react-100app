@@ -1,5 +1,6 @@
 import Card from '../common/Card'
-import HelloWorld from '../HelloWorld/HelloWorld';
+import HelloWorld from '../helloWorld/HelloWorld';
+import CountUp from '../countup/Countup';
 import { Routes, Route, Link } from 'react-router-dom';
 
 
@@ -8,6 +9,11 @@ const linkList = [
     link: '/helloworld',
     name: 'Hello World',
     text: 'Reactを使用して、画面中央に"Hello World"というメッセージを表示するコンポーネントを作成します。'
+  },
+  {
+    link: '/countup',
+    name: 'Count Up',
+    text: 'Reactを使用して、画面中央にカウンターを表示する'
   }
 ]
 export default function Home() {
@@ -32,6 +38,7 @@ export default function Home() {
 
       <Routes>
         <Route path='/helloworld' element = {<HelloWorld/>} />
+        <Route path='/countup' element = {<CountUp/>} />
       </Routes>
     </>
   );
