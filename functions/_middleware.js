@@ -7,6 +7,8 @@ const errorHandler = async ({ next }) => {
 };
 
 const guardByBasicAuth = async ({ request, next, env }) => {
+  const url = new URL(request.url);
+  console.log(url)
 
 
   // Check header
