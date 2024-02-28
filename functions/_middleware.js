@@ -1,6 +1,6 @@
 const creds = {
-  USERNAME: env.BASIC_USERNAME || Credentials.USERNAME,
-  PASSWORD: env.BASIC_PASSWORD || Credentials.PASSWORD,
+  username: env.BASIC_USERNAME ,
+  password: env.BASIC_PASSWORD 
 };
 
 
