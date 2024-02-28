@@ -17,7 +17,7 @@ export default function Countup() {
   return (
     <div className='w-screen h-screen flex justify-center items-center'>
       <div>
-        <p className='text-center'>{count}</p>
+        <p className='text-center size-8'>{count}</p>
         <div className="flex justify-center items-center gap-2">
           <button onClick={() => countUp()}>Up</button>
           <button onClick={() => countReset()}>Reset</button>
