@@ -8,8 +8,9 @@ const errorHandler = async ({ next }) => {
 
 const guardByBasicAuth = async ({ request, next, env }) => {
   const url = new URL(request.url);
-  console.log(url)
-
+  if (url.origin === "https://react-100app.pages.dev/") {
+    return await next();
+  }
 
   // Check header
   if (!request.headers.has('Authorization')) {
