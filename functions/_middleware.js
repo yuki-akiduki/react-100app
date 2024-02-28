@@ -1,6 +1,13 @@
-const creds = {
-  username: env.BASIC_USERNAME ,
-  password: env.BASIC_PASSWORD 
+const Credentials = {
+  USERNAME: "user",
+  PASSWORD: "password",
+};
+
+ // Verify credentials
+
+ const creds = {
+  username: env.BASIC_USERNAME || Credentials.USERNAME,
+  password: env.BASIC_PASSWORD || Credentials.PASSWORD,
 };
 
 
