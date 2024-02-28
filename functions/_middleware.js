@@ -7,8 +7,7 @@ const errorHandler = async ({ next }) => {
 };
 
 const guardByBasicAuth = async ({ request, next, env }) => {
-  const url = new URL(request.url);
-  if (url.origin === "https://react-100app.pages.dev/") {
+  if (env.ENVIRONMENT === 'production') {
     return await next();
   }
 
