@@ -19,7 +19,7 @@ export default function Countup() {
       <div>
         <p className='text-center size-8'>{count}</p>
         <div className="flex justify-center items-center gap-2">
-          <button onClick={() => countUp()}>Up</button>
+          <button onClick={() => countUp()}>UpUp</button>
           <button onClick={() => countReset()}>Reset</button>
           <button onClick={() => countDown()}>Down</button>
         </div>
