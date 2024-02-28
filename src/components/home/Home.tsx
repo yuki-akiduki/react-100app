@@ -1,5 +1,5 @@
 import Card from '../common/Card'
-import HelloWorld from '../helloWorld/HelloWorld';
+import HelloWorld from '../HelloWorld/HelloWorld';
 import CountUp from '../countup/Countup';
 import { Routes, Route, Link } from 'react-router-dom';
 
