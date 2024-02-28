@@ -20,7 +20,7 @@ const errorHandler = async ({ next }) => {
 };
 
 
-const guardByBasicAuth = async ({ next, request, }) => {
+const guardByBasicAuth = async ({ next, request, env}) => {
   // Check header
   if (!request.headers.has("Authorization")) {
     return new Response(
