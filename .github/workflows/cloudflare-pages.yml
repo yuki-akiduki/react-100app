@@ -19,5 +19,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 3a5671397096a9b0ea26c2c27d594c8b
           projectName: react-100app
-          directory: ./dist
+          directory: ./src
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
