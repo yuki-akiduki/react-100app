@@ -7,7 +7,7 @@ const errorHandler = async ({ next }) => {
 };
 
 const guardByBasicAuth = async ({ request, next, env }) => {
-  if (env.ENVIRONMENT === 'cat') {
+  if (env.ENVIRONMENT === 'production') {
     return await next();
   }
 
